@@ -1,2 +1,2 @@
 # Proyecto_1
-Pyoyecto de programacion.
+Proyecto de programacion.
