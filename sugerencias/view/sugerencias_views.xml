@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>-
+
+
+
+       
+        <record id="view_sugerencias_form" model="ir.ui.view">
+            <field name="name">Sugerencias Reclamos</field>
+            <field name="model">suge.recla</field>
+            <field name="arch" type="xml">
+                <form string="Sugerencias Reclamos">
+                
+                <sheet>
+                    <h1>Sugerencias y Reclamos</h1>
+                    <group>
+                        <field name="name" />
+                        
+                    </group>
+                        
+                </sheet>
+                
+                </form>
+            </field>
+        </record>
+        
+        <record id="action_sugerencias_list" model="ir.actions.act_window">
+            <field name="name">Sugerencias Reclamos</field>
+            <field name="res_model">suge.recla</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem action="action_sugerencias_list" id="menu_SUGERENCIAS" parent="sales_team.menu_sales" sequence="15" />
+        
+
+
+</odoo>
