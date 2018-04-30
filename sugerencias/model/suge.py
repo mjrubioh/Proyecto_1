@@ -11,6 +11,10 @@ from odoo import api, fields, models, _
 class sugerecla(models.Model):
     _name = "suge.recla"
     
+    
 
     name = fields.Char(string='Nombre', required=True, readonly=False,)
-   
+	
+	name = fields.Char(string='Apellido', required=True, readonly=False,)
+
+	name = fields.Char(string='Carrera', required=True, readonly=False,)

@@ -14,6 +14,9 @@
                     <h1>Sugerencias y Reclamos</h1>
                     <group>
                         <field name="name" />
+                        <field name="name" />
+                        <field name="name" />
+                        <field name="name" />
                         
                     </group>
                         
