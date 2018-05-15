@@ -14,7 +14,8 @@ class sugerecla(models.Model):
     
 
     name = fields.Char(string='Nombre', required=True, readonly=False,)
-	
-	name = fields.Char(string='Apellido', required=True, readonly=False,)
-
-	name = fields.Char(string='Carrera', required=True, readonly=False,)
+	apell = fields.Char(string='Apellido', required=True, readonly=False,)
+	carr = fields.Char(string='Carrera', required=True, readonly=False,)
+   
+   
+    

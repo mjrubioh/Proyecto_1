@@ -13,9 +13,10 @@
                 <sheet>
                     <h1>Sugerencias y Reclamos</h1>
                     <group>
+                        
                         <field name="name" />
-                        <field name="name" />
-                        <field name="name" />
+                        <field name="apell" />
+                        <field name="carr" />
                         <field name="name" />
                         
                     </group>
@@ -33,8 +34,7 @@
             <field name="view_mode">tree,form</field>
         </record>
         
-        <menuitem action="action_sugerencias_list" id="menu_SUGERENCIAS" parent="sales_team.menu_sales" sequence="15" />
-        
+        <menuitem action="action_sugerencias_list" id="menu_SUGERENCIAS" parent="sales_team.menu_sales" sequence="15" />      
 
 
 </odoo>
