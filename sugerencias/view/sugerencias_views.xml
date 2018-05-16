@@ -17,7 +17,8 @@
                         <field name="name" />
                         <field name="apell" />
                         <field name="carr" />
-                        <field name="name" />
+                        <field name="horario" />
+                        <field name="reclamos" />
                         
                     </group>
                         
@@ -36,5 +37,35 @@
         
         <menuitem action="action_sugerencias_list" id="menu_SUGERENCIAS" parent="sales_team.menu_sales" sequence="15" />      
 
+		<record id="view_clase_horario_form" model="ir.ui.view">
+            <field name="name">Clase Horario</field>
+            <field name="model">clase.horario</field>
+            <field name="arch" type="xml">
+                <form string="Clase horario">
+                
+                <sheet>
+                    <h1>Horarios UNEFA</h1>
+                    <group>
+                        <field name="name" />
+                        <field name="noct" />
+                        <field name="mixt" />
+                        
+                    </group>
+                        
+                </sheet>
+                
+                </form>
+            </field>
+        </record>
+        
+        <record id="action_clase_horario_list" model="ir.actions.act_window">
+            <field name="name">Horarios</field>
+            <field name="res_model">clase.horario</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem action="action_clase_horario_list" id="menu_horario_UNEFA" parent="sales_team.menu_sales" sequence="20" />
+        
 
 </odoo>
